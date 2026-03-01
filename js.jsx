@@ -4,6 +4,7 @@ import Footer from './src/components/Footer';
 import Home from './src/components/Home';
 import Projects from './src/components/Projects';
 import Members from './src/components/Members';
+import Newsletter from './src/components/Newsletter';
 
 export default function App() {
     const [currentPage, setCurrentPage] = useState('home');
@@ -23,6 +24,7 @@ export default function App() {
             <main>
                 {renderPage()}
             </main>
+            <Newsletter />
             <Footer />
         </div>
     );
